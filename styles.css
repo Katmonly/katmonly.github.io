@@ -1,185 +1,49 @@
-h1 {bold; text-align: center;
-  font-family: 'Baloo 2', cursive;
-  font-family: 'Oswald', sans-serif;}
-.treasure {background-color: #75C750; text-align: center ;
-}
-#one{ color:#F40D08 ;
-}
-#two{ color: #F40D08;
-}
-#three{ color: #F40D08;
-}
-#no { text-align: center;
-list-style-position: inside;
-}
-
-/* selector {
-  key: value pair
-      OR
-  property: value;
-
-  color: blue;
-} */
-
-/* h1 {
-  color: green;
-}
-
-h2 {
-color: green;
-}
-
-h3 {
-color: green;
-} */
-
-h1, h2, h3 {
-  color: white;
-  text-align: center;
-}
-
-#recipe {
-  font-size: 35px;
-  text-align: left;
-}
-
-.green {
-  color: #738a03;
-}
-
-body {
-  background-image: url(https://images.unsplash.com/photo-1590394017390-add3e9922c35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80);
-  background-position: center;
-  background-size: cover;
-  font-family: 'Baloo 2', cursive;
-}
-
-button {
-  text-align: center;
-  border: 2px solid blue;
-  border-radius: 5px;
-  background-color: #F4BC08;
-  font-size: 35px;
-  font-family: 'Baloo 2', cursive;
-}
-
-li {
-  color: red;
-}
-
-.bottom {
-  color: blue;
-}
-
-#cinn {
-  color: #D27D2D;
-}
-
-#yellow {
-  color: #f0de16;
-}
-
-table {
-  border: 3px dotted green;
-  margin-bottom: 20px;
-}
-td{
-  border: 2px solid darkred;
-  height: 70px;
-  width: 100px;
-}
-
-img {
-  width: 500px;
-  height: 500px;
-}
-
-#directions {
-  font-size: 25px;
-  text-align: left;
-  color: #C70039;
-}
-
-#treasure-board{
-  display:flex;
-  justify-content: center;
-
-}
-
-restart {
-  text-align: center;
-  border: 10px solid green;
-  border-radius: 5px;
-  background-color: #F4BC08 ;
-  display:flex;
-  justify-content:flex-end;
-}
-
-#top{
-  font-size: 80px;
-  animation: wiggle 1s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes wiggle {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-button:hover{
-  color: red;
-  background-color: black;
-}
-
-td:hover{
-  animation: wiggle 1s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  height: 80px;
-  width: 110px;
-}
-
-#outline{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-td:hover{
-  animation: wiggle 1s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  height: 20px;
-  width: 50px;
-  border: 2px solid black; height: 100px; width: 150px;
-}
-@keyframes wiggle {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-body{background-image:url(https://images.unsplash.com/photo-1517747614396-d21a78b850e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29jY2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Soccer Treasure Hunt </title>
+    <link rel="stylesheet"href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body class="treasure">
+    <h1> Soccer Treasure Hunt </h1>
+      <h2>Good Luck Scoring!</h2>
+    <ul id="no">
+      <li id="one" onclick="treasure('1')"> Click the boxes to reveal what's on the map.</li>
+      <li id="two"> If you click on the red card, you lose. </li>
+      <li id="three"> If you click on the soccer ball, you win! </li>
+    </ul>
+<div id="treasure-board">
+    <table id="outline">
+      <tr>
+        <td id="1" onclick="treasure ('1')">⚽</td>
+        <td id="2" onclick="treasure ('2')">⚽</td>
+        <td id="3" onclick="treasure('3')">⚽</td>
+      </tr>
+      <tr>
+        <td id="4" onclick="treasure ('4')">⚽</td>
+        <td id="5" onclick="treasure ('5')">⚽</td>
+        <td id="6" onclick="treasure('6')">⚽</td>
+      </tr>
+      <tr>
+        <td id="7" onclick="treasure ('7')">⚽</td>
+        <td id="8" onclick="treasure ('8')">⚽</td>
+        <td id="9" onclick="treasure('9')">⚽</td>
+      </tr>
+    </table>
 
 
-    background-size: cover;
-    background-position: center;
+  </div>
+  <button type="restart" name="restart">Restart Game</button>
 
-}
+
+    <footer>&copy by Vicente Saldana, Elijah Barreto, Katherine Ly
+    <a href="https://www.crazygames.com/t/soccer" target="_blank">Other Soccer Games</a>
+    </footer>
+    <script type="text/javascript" src= "treasurehunt.js">
+    </script>
+  </body>
+</html>
